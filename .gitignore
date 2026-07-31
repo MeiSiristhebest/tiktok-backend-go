@@ -1,0 +1,22 @@
+# Binary output
+server.exe
+*.exe
+*.exe.test
+*.out
+
+# Database
+*.db
+*.db-journal
+*.sqlite
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Static Uploads
+static/video/*
+!static/video/.gitkeep
+static/cover/*
+!static/cover/.gitkeep
