@@ -14,10 +14,7 @@
 ---
 
 <p align="center">
-  **Project Overview**
-  本项目基于**字节跳动第六届青训营**后端项目需求规范进行架构设计与工程落地方案开发，使用 **Golang (Gin + GORM + MySQL / SQLite)** 打造极简版抖音 Backend 服务。
-  
-  全量实现了青训营要求的 **基础服务、互动服务、社交服务** 3 大方向共 16 个 RESTful API 接口，并配合官方极简抖音 App (APK) 进行了全流程功能联调与性能验证。
+    <strong>基于 Gin + GORM 的极简版抖音服务端 · 青训营全接口实现</strong>
 </p>
 
 ## 🌟 核心特性 (Features)
@@ -131,7 +128,7 @@ curl "http://127.0.0.1:8080/douyin/feed/"
 | **社交** | `/douyin/relation/action/` | POST | 关系操作 (关注/取关) | `controller.RelationAction` |
 | **社交** | `/douyin/relation/follow/list/` | GET | 关注列表 | `controller.FollowList` |
 | **社交** | `/douyin/relation/follower/list/` | GET | 粉丝列表 | `controller.FollowerList` |
-| **社交** | `/douyin/relation/friend/list/` | GET | 好友列表 | `controller.FriendList` |
+| **社交** | `/douyin/relation/friend/list/` | GET | 好友列表 (互相关注) | `controller.FriendList` |
 | **社交** | `/douyin/message/chat/` | GET | 聊天记录 | `controller.MessageChat` |
 | **社交** | `/douyin/message/action/` | POST | 消息操作 | `controller.MessageAction` |
 

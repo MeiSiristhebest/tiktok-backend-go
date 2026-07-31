@@ -14,10 +14,7 @@
 ---
 
 <p align="center">
-  **Project Overview**
-  This project is architected and implemented based on the backend project requirements specification from ByteDance's 6th Youth Training Camp. It uses **Golang (Gin + GORM + MySQL / SQLite)** to build a minimalist Douyin (TikTok) Backend service.
-  
-  The project fully implements all 16 RESTful API endpoints across the **3 core service areas** required by the training camp: Basic Services, Interaction Services, and Social Services. It has been fully tested and performance-verified end-to-end with the official minimalist Douyin Android App (APK).
+    <strong>Minimalist TikTok Backend in Gin + GORM · Full ByteDance Youth Camp API Implementation</strong>
 </p>
 
 ## 🌟 Core Features
