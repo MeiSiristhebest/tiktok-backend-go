@@ -1,16 +1,24 @@
 # TikTok Backend Go (Minimalist Douyin Server)
 
-[![Go Version](https://img.shields.io/badge/Go-1.22%2B-00ADD8?style=flat&logo=go)](https://go.dev/)
-[![Framework](https://img.shields.io/badge/Framework-Gin-008080?style=flat&logo=gin)](https://gin-gonic.com/)
-[![ORM](https://img.shields.io/badge/ORM-GORM-blue?style=flat)](https://gorm.io/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+<p align="center">
+  [![Go Version](https://img.shields.io/badge/Go-1.22%2B-00ADD8?style=flat&logo=go)](https://go.dev/)
+  [![Framework](https://img.shields.io/badge/Framework-Gin-008080?style=flat&logo=gin)](https://gin-gonic.com/)
+  [![ORM](https://img.shields.io/badge/ORM-GORM-blue?style=flat)](https://gorm.io/)
+  [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+</p>
 
-> **Project Overview**
-> This project is architected and implemented based on the backend project requirements specification from ByteDance's 6th Youth Training Camp. It uses **Golang (Gin + GORM + MySQL / SQLite)** to build a minimalist Douyin (TikTok) Backend service.
->
-> The project fully implements all 16 RESTful API endpoints across the **3 core service areas** required by the training camp: Basic Services, Interaction Services, and Social Services. It has been fully tested and performance-verified end-to-end with the official minimalist Douyin Android App (APK).
+<p align="center">
+  <a href="README.md">🇨🇳 中文</a> &nbsp;|&nbsp; <a href="README_EN.md">🇺🇸 English</a>
+</p>
 
 ---
+
+<p align="center">
+  **Project Overview**
+  This project is architected and implemented based on the backend project requirements specification from ByteDance's 6th Youth Training Camp. It uses **Golang (Gin + GORM + MySQL / SQLite)** to build a minimalist Douyin (TikTok) Backend service.
+  
+  The project fully implements all 16 RESTful API endpoints across the **3 core service areas** required by the training camp: Basic Services, Interaction Services, and Social Services. It has been fully tested and performance-verified end-to-end with the official minimalist Douyin Android App (APK).
+</p>
 
 ## 🌟 Core Features
 

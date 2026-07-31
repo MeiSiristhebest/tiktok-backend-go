@@ -1,16 +1,24 @@
 # TikTok Backend Go (极简版抖音服务端)
 
-[![Go Version](https://img.shields.io/badge/Go-1.22%2B-00ADD8?style=flat&logo=go)](https://golang.org)
-[![Framework](https://img.shields.io/badge/Framework-Gin-008080?style=flat&logo=gin)](https://gin-gonic.com)
-[![ORM](https://img.shields.io/badge/ORM-GORM-blue?style=flat)](https://gorm.io)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+<p align="center">
+  [![Go Version](https://img.shields.io/badge/Go-1.22%2B-00ADD8?style=flat&logo=go)](https://golang.org)
+  [![Framework](https://img.shields.io/badge/Framework-Gin-008080?style=flat&logo=gin)](https://gin-gonic.com)
+  [![ORM](https://img.shields.io/badge/ORM-GORM-blue?style=flat)](https://gorm.io)
+  [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+</p>
 
-> **Project Overview**
-> 本项目基于**字节跳动第六届青训营**后端项目需求规范进行架构设计与工程落地方案开发，使用 **Golang (Gin + GORM + MySQL / SQLite)** 打造极简版抖音 Backend 服务。
->
-> 全量实现了青训营要求的 **基础服务、互动服务、社交服务** 3 大方向共 16 个 RESTful API 接口，并配合官方极简抖音 App (APK) 进行了全流程功能联调与性能验证。
+<p align="center">
+  <a href="README.md">🇨🇳 中文</a> &nbsp;|&nbsp; <a href="README_EN.md">🇺🇸 English</a>
+</p>
 
 ---
+
+<p align="center">
+  **Project Overview**
+  本项目基于**字节跳动第六届青训营**后端项目需求规范进行架构设计与工程落地方案开发，使用 **Golang (Gin + GORM + MySQL / SQLite)** 打造极简版抖音 Backend 服务。
+  
+  全量实现了青训营要求的 **基础服务、互动服务、社交服务** 3 大方向共 16 个 RESTful API 接口，并配合官方极简抖音 App (APK) 进行了全流程功能联调与性能验证。
+</p>
 
 ## 🌟 核心特性 (Features)
 
