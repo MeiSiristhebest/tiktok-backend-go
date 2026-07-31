@@ -167,7 +167,7 @@ git push origin feat/your-feature
 | **Unauthorized Like/Comment/Follow** | All interaction endpoints enforce authentication middleware to validate the current Token user_id against the acting subject |
 | **SQL Injection** | All queries use GORM parameter binding or `?` placeholders; **string-concatenated SQL is strictly prohibited** |
 
-**Vulnerability disclosure**: Report security issues directly to **`tiktok-backend-security [at] googlegroups [dot] com`** — do not file a public issue. We commit to a **first response within 24 hours**.
+**Vulnerability disclosure**: Report security issues directly to **`maox_neta@foxmail.com`** — do not file a public issue. We commit to a **first response within 24 hours**.
 
 ---
 

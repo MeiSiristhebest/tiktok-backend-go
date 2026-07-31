@@ -167,7 +167,7 @@ git push origin feat/your-feature
 | **越权点赞/评论/关注** | 所有互动接口强制鉴权中间件校验当前 Token user_id，与操作主体一致 |
 | **SQL 注入** | 所有查询通过 GORM 参数绑定或 `?` 占位符，**禁止字符串拼接 SQL** |
 
-**漏洞上报**：发现安全问题请直接发邮件至 **`tiktok-backend-security [at] googlegroups [dot] com`**，不要公开在 Issue 里。承诺 **24 小时内首次响应**。
+**漏洞上报**：发现安全问题请直接发邮件至 **`maox_neta@foxmail.com`**，不要公开在 Issue 里。承诺 **24 小时内首次响应**。
 
 ---
 
