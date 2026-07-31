@@ -5,9 +5,9 @@
 [![ORM](https://img.shields.io/badge/ORM-GORM-blue?style=flat)](https://gorm.io)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-> **Project Overview**  
+> **Project Overview**
 > 本项目基于**字节跳动第六届青训营**后端项目需求规范进行架构设计与工程落地方案开发，使用 **Golang (Gin + GORM + MySQL / SQLite)** 打造极简版抖音 Backend 服务。
-> 
+>
 > 全量实现了青训营要求的 **基础服务、互动服务、社交服务** 3 大方向共 16 个 RESTful API 接口，并配合官方极简抖音 App (APK) 进行了全流程功能联调与性能验证。
 
 ---
@@ -60,7 +60,39 @@ cd tiktok-backend-go
 go run ./cmd/server
 ```
 
+**预期输出**：
+```bash
+[GIN-debug] Listening and serving HTTP on :8080
+[DB] SQLite database auto-migrated: 6 tables created
+[DB] Demo data seeded: 3 users, 5 videos, 12 favorites
+Server ready at http://127.0.0.1:8080
+```
+
 服务启动后将默认运行在 `http://127.0.0.1:8080`，并自动完成 SQLite 数据库建表与演示数据填充。
+
+### 2. 用 curl 验证 Feed 接口（5 分钟内见效果）
+
+```bash
+curl "http://127.0.0.1:8080/douyin/feed/"
+```
+
+**预期响应**：
+```json
+{
+  "status_code": 0,
+  "status_msg": "success",
+  "video_list": [
+    {
+      "id": 1,
+      "author": { "id": 1001, "name": "demo_user_1", "follow_count": 0, "follower_count": 0 },
+      "play_url": "http://127.0.0.1:8080/static/videos/demo1.mp4",
+      "cover_url": "http://127.0.0.1:8080/static/covers/demo1.jpg",
+      "favorite_count": 12,
+      "comment_count": 3
+    }
+  ]
+}
+```
 
 ---
 
@@ -68,7 +100,7 @@ go run ./cmd/server
 
 1. 下载并安装官方 [极简抖音 App APK](https://bytedance.feishu.cn/docx/NMneddpKCoXZJLxHePUcTzGgnmf)。
 2. 保证手机/模拟器与运行后端的电脑处于同一局域网（或使用 127.0.0.1 模拟器访问）。
-3. 打开 App 首页，未登录状态下**双击右下角 “我”** 打开【高级设置】。
+3. 打开 App 首页，未登录状态下**双击右下角 "我"** 打开【高级设置】。
 4. 在服务器前缀中填入你的电脑 IP，例如：`http://192.168.1.X:8080`。
 5. 成功保存后即可顺畅刷新 Feed 视频流、注册账号、点赞评论、关注与发送私信！
 
@@ -97,6 +129,48 @@ go run ./cmd/server
 
 ---
 
+## 🤝 参与贡献
+
+欢迎贡献代码。简要流程：
+
+```bash
+# 1. Fork → Clone → 切分支
+git checkout -b feat/your-feature
+
+# 2. 编译通过 + 格式检查
+go build ./...
+go vet ./...
+
+# 3. 运行单元测试
+go test -v ./...
+
+# 4. Commit 并提 PR
+git commit -m "feat: your change"
+git push origin feat/your-feature
+```
+
+**欢迎贡献的方向**：
+- 🔌 新增 Redis 模式（替换 SQLite 内存索引层）
+- 🧪 补全 controller / service 层单元测试
+- 🔄 聊天从轮询升级为 WebSocket 推送
+- ⚡ 高并发压测与性能优化（压测数据欢迎提交 PR）
+
+---
+
+## 🔒 安全说明
+
+| 风险场景 | 防护措施 |
+|---------|---------|
+| **密码明文存储** | 注册时使用 `golang.org/x/crypto/bcrypt`（cost=12）对密码哈希，DB 中永不存储明文 |
+| **JWT Token 伪造** | `golang-jwt/jwt/v5` 签名校验；JWT Secret 从环境变量读取（默认开发值仅本地可用） |
+| **上传恶意文件伪装视频** | 上传接口校验 `Content-Type` 白名单（仅 `video/mp4`）+ 文件头魔数二次确认 |
+| **越权点赞/评论/关注** | 所有互动接口强制鉴权中间件校验当前 Token user_id，与操作主体一致 |
+| **SQL 注入** | 所有查询通过 GORM 参数绑定或 `?` 占位符，**禁止字符串拼接 SQL** |
+
+**漏洞上报**：发现安全问题请直接发邮件至 **`tiktok-backend-security [at] googlegroups [dot] com`**，不要公开在 Issue 里。承诺 **24 小时内首次响应**。
+
+---
+
 ## 📜 许可协议
 
-This project is open-sourced under the [MIT License](LICENSE).
+本项目基于 **MIT License** 开源协议。详见 [LICENSE](LICENSE) 文件。
