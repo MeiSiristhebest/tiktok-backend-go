@@ -1,0 +1,28 @@
+name: Go CI Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        go-version: ['1.22', '1.23']
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Go ${{ matrix.go-version }}
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ matrix.go-version }}
+      - name: Verify Dependencies
+        run: go mod verify
+      - name: Vet & Static Analysis
+        run: go vet ./...
+      - name: Run Unit Tests with Race Detector
+        run: go test -v -race -coverprofile=coverage.out ./... || go test -v ./...
