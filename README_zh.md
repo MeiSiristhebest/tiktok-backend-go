@@ -280,3 +280,6 @@ git push origin feat/your-feature
 <a href="https://github.com/MeiSiristhebest/tiktok-backend-go/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=MeiSiristhebest/tiktok-backend-go" alt="Contributors" />
 </a>
+
+<!-- Scarf Telemetry Pixel -->
+<img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=p2L36r5iF7fAu6cd2J2Y41Cp6Z3YJHInGjzgouIZuLLHJhyoV9" />
