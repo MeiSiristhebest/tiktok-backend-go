@@ -261,8 +261,12 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 If you find this project useful or inspiring, please consider giving it a ⭐ **Star** on GitHub! It helps more developers discover the work and supports continuous open-source maintenance.
 
 <p align="center">
-  <a href="https://star-history.com/#MeiSiristhebest/tiktok-backend-go&Date">
-    <img src="https://api.star-history.com/svg?repos=MeiSiristhebest/tiktok-backend-go&type=Date" alt="Star History Chart" width="100%" />
+  <a href="https://www.star-history.com/?repos=MeiSiristhebest%2Ftiktok-backend-go&type=date&legend=bottom-right">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=MeiSiristhebest/tiktok-backend-go&type=date&theme=dark&legend=bottom-right&sealed_token=uaVldQgHazK-DcCE89936BEzAUE1ErdhsQqB7B583EJxvNyhoxZkU2soE6gCjSGsdn5TpVFHAzFZx8D-0S5bVhb8lmr1rrsJOU_UV3x9DqHUQ-cQJYtXBw" />
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=MeiSiristhebest/tiktok-backend-go&type=date&legend=bottom-right&sealed_token=uaVldQgHazK-DcCE89936BEzAUE1ErdhsQqB7B583EJxvNyhoxZkU2soE6gCjSGsdn5TpVFHAzFZx8D-0S5bVhb8lmr1rrsJOU_UV3x9DqHUQ-cQJYtXBw" />
+      <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=MeiSiristhebest/tiktok-backend-go&type=date&legend=bottom-right&sealed_token=uaVldQgHazK-DcCE89936BEzAUE1ErdhsQqB7B583EJxvNyhoxZkU2soE6gCjSGsdn5TpVFHAzFZx8D-0S5bVhb8lmr1rrsJOU_UV3x9DqHUQ-cQJYtXBw" width="100%" />
+    </picture>
   </a>
 </p>
 
