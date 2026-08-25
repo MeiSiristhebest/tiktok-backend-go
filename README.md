@@ -256,10 +256,17 @@ git push origin feat/your-feature
 
 If you find this project useful or inspiring, please consider giving it a ⭐ **Star** on GitHub! It helps more developers discover the work and supports continuous open-source maintenance.
 
-[![Star History Chart](https://api.star-history.com/svg?repos=MeiSiristhebest/tiktok-backend-go&type=Date)](https://star-history.com/#MeiSiristhebest/tiktok-backend-go&Date)
-
-### 🌟 Stargazers Over Time
-[![Stargazers repo roster for @MeiSiristhebest/tiktok-backend-go](https://reporoster.com/stars/MeiSiristhebest/tiktok-backend-go)](https://github.com/MeiSiristhebest/tiktok-backend-go/stargazers)
+<p align="left">
+  <a href="https://github.com/MeiSiristhebest/tiktok-backend-go/stargazers">
+    <img src="https://img.shields.io/github/stars/MeiSiristhebest/tiktok-backend-go?style=for-the-badge&logo=apachespark&color=f59e0b" alt="Stargazers" />
+  </a>
+  <a href="https://github.com/MeiSiristhebest/tiktok-backend-go/network/members">
+    <img src="https://img.shields.io/github/forks/MeiSiristhebest/tiktok-backend-go?style=for-the-badge&color=3b82f6" alt="Forks" />
+  </a>
+  <a href="https://star-history.com/#MeiSiristhebest/tiktok-backend-go&Date">
+    <img src="https://img.shields.io/badge/Star%20History-View%20Interactive%20Chart-FF6B6B?style=for-the-badge&logo=github" alt="Star History" />
+  </a>
+</p>
 
 ### 🤝 Contributors
 <a href="https://github.com/MeiSiristhebest/tiktok-backend-go/graphs/contributors">
