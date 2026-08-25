@@ -2,7 +2,7 @@
   Designed & Built with ❤️ by MeiSiristhebest (https://github.com/MeiSiristhebest)
   If this repository helps your learning or engineering, please consider dropping a ⭐ Star!
 -->
-# TikTok Backend Go (Minimalist Douyin Server)
+<h1 align="center">🎬 tiktok-backend-go</h1>
 
 <p align="center">
   <b>English | <a href="./README_zh.md">简体中文</a></b>
@@ -12,16 +12,15 @@
 > 💡 **If this architecture, engineering implementation, or toolchain helps your learning or workflow, please drop a ⭐ Star!**
 > 📚 Explore the technical blueprint: [ARCHITECTURE.md](./ARCHITECTURE.md)
 
-
 <p align="center">
-  <a href="https://go.dev/"><img src="https://img.shields.io/badge/Go-1.22%2B-00ADD8?style=flat&logo=go" alt="Go Version" /></a>
-  <a href="https://gin-gonic.com/"><img src="https://img.shields.io/badge/Framework-Gin-008080?style=flat&logo=gin" alt="Framework" /></a>
-  <a href="https://gorm.io/"><img src="https://img.shields.io/badge/ORM-GORM-blue?style=flat" alt="ORM" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License" /></a>
+  <b>High-Concurrency Video Feed & Social Interaction Backend in Go + Gin + GORM</b>
 </p>
 
 <p align="center">
-  <a href="README.md">🇨🇳 中文</a> &nbsp;|&nbsp; <a href="README_EN.md">🇺🇸 English</a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat" alt="License: MIT" /></a>
+  <a href="https://go.dev/"><img src="https://img.shields.io/badge/Go-1.22%2B-00ADD8?style=flat&logo=go&logoColor=white" alt="Go 1.22+" /></a>
+  <a href="https://gin-gonic.com/"><img src="https://img.shields.io/badge/Gin-v1.9%2B-008ECF?style=flat&logo=gin&logoColor=white" alt="Gin Framework" /></a>
+  <a href="https://gorm.io/"><img src="https://img.shields.io/badge/GORM-v1.25%2B-7852FF?style=flat" alt="GORM" /></a>
 </p>
 
 ---
