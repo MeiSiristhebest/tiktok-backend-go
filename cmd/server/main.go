@@ -13,6 +13,16 @@ import (
 )
 
 func main() {
+	fmt.Println(`
+┌────────────────────────────────────────────────────────┐
+│  ⚡ tiktok-backend-go                                  │
+│  High-concurrency video feed & social interaction      │
+│                                                        │
+│  ⭐ Star on GitHub:                                    │
+│     https://github.com/MeiSiristhebest/tiktok-backend-go│
+└────────────────────────────────────────────────────────┘
+`)
+
 	config.InitConfig()
 	repository.InitDB()
 
