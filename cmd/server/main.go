@@ -13,7 +13,7 @@ import (
 )
 
 func main() {
-	fmt.Println(`
+	fmt.Print(`
 ┌────────────────────────────────────────────────────────┐
 │  ⚡ tiktok-backend-go                                  │
 │  High-concurrency video feed & social interaction      │
